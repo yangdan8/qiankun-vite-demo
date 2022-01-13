@@ -1,0 +1,37 @@
+{
+  "name": "qiankun-vite-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "examples:install": "run-s install:*",
+    "examples:start": "run-p start:*",
+    "examples:start-multiple": "run-p start-main-multiple start:vue3 start:vite-vue3 start:vue start:vue-another",
+    "install:main": "cd examples/main && yarn",
+    "start:main": "cd examples/main && yarn start",
+    "start-main-multiple": "cd examples/main && yarn start:multiple",
+    "install:vue": "cd examples/vue && yarn",
+    "start:vue": "cd examples/vue && yarn start",
+    "install:vue-another": "cd examples/vue-another && yarn",
+    "start:vue-another": "cd examples/vue-another && yarn start",
+    "install:vite-vue3": "cd examples/vite-vue3 && yarn",
+    "start:vite-vue3": "cd examples/vite-vue3 && yarn start",
+    "install:vue3": "cd examples/vue3 && yarn",
+    "start:vue3": "cd examples/vue3 && yarn start"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.5",
+    "import-html-entry": "^1.9.0",
+    "single-spa": "^5.9.2",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.12.1",
+    "cross-env": "^7.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0",
+    "typescript": "^4.1.2"
+  },
+  "author": "",
+  "license": "MIT"
+}

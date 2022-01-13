@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>qiankun multiple demo</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      body > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 30vh;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="unmount">unmount</button>
+    <button id="mount">mount</button>
+
+    <div>
+      <div id="vite-vue3">vite-vue3 loading...</div>
+      <div id="vue3">vue3 loading...</div>
+    </div>
+
+    <div>
+      <div id="vue">vue loading...</div>
+      <div id="vue-another">vue-another loading...</div>
+    </div>
+  </body>
+</html>
